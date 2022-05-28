@@ -5,7 +5,7 @@ using namespace std;
 
 
 void buildSegmentTree(vector<int> x, int u, int tl, int tr, vector<int>& tree){
-    if (tr - tl <= 0) {
+    if (tr == tl) {
         tree[u] = x[tr];
     } else {
         int tm = (tr + tl) >> 1;
